@@ -1,9 +1,9 @@
 import React from 'react'
 
-const List = (props) => (
+const List = ({ todos }) => (
   <div>
     <ul>
-      {props.todos.map((todo, index) => (
+      {todos.map((todo, index) => (
         <li key={index}>{todo.text}</li>
       ))}
     </ul>
